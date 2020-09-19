@@ -1,6 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
-import groupsData from "./sampleData/groups.json";
+import sampleData from "./sampleData/data.json";
 
 import SidebarChat from "./SidebarChat";
 // import Icons from '@material-ui/core'
@@ -35,8 +35,8 @@ const Sidebar = () => {
       setOpen(false);
     }
   }
-  const groups =  groupsData.map((group,index) =>      {
-    return (<SidebarChat key={index}
+  const groups =  sampleData.map((group,index) =>      {
+    return (<SidebarChat key={group.id}
         typing={group.typing}
         picture={group.picture}
         name={group.name}

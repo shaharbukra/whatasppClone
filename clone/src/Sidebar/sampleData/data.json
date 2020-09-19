@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "picture": "/Assets/1.png",
+        "name": "אוכל",
+        "lastMessage": "You were added"
+    },
+    {
+        "id": 2,
+        "picture": "/Assets/2.jpg",
+        "name": "עגלות",
+        "lastMessage": "חחחחחח",
+        "typing": true,
+        "chat": [
+            {
+                "message": "בלה בלה בלה",
+                "date": "19-09-20 19:31",
+                "from": "Me"
+            },
+            {
+                "message": "בלה בלה 123123",
+                "date": "19-09-20 19:31",
+                "from": "someone"
+            },
+            {
+                "message": "בלה בלה 432423",
+                "date": "19-09-20 19:32",
+                "from": "someone"
+            },
+            {
+                "message": "בלה בלה גשדגשד",
+                "date": "19-09-20 19:32",
+                "from": "Me"
+            },
+            {
+                "typing": true,
+                "date": "19-09-20 19:32",
+                "from": "Me"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "picture": "/Assets/3.jpg",
+        "name": "קפה ומאפה☕🍪",
+        "lastMessage": "וואי, מעניין מה יהיה בכיפור 😅"
+    },
+    {
+        "id": 4,
+        "picture": "/Assets/4.jpg",
+        "name": "המשפחה שלנו 💛💚💙💜❤",
+        "lastMessage": "בוקר טוב וחג שמח אלמוגי❤"
+    },
+    {
+        "id": 5,
+        "picture": "/Assets/1.png",
+        "name": "אוכל",
+        "lastMessage": "You were added"
+    },
+    {
+        "id": 6,
+        "picture": "/Assets/2.jpg",
+        "name": "עגלות",
+        "lastMessage": "חחחחחח",
+        "typing": true
+    }
+]
