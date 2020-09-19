@@ -1,0 +1,13 @@
+{
+    "git.ignoreLimitWarning": true,
+    "emmet.syntaxProfiles": {
+        "javascript": "js",
+        "xml": {
+            "attr_quotes": "single"
+        }
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "compile-hero.disable-compile-files-on-did-save-code": true
+}
