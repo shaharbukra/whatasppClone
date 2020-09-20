@@ -5,9 +5,9 @@ import Sidebar from "./Sidebar/Sidebar";
 
 function App() {
   const [chatData, setChatData] = useState({});
-  function handleChatClick(chatData) {
-    if (chatData?.id) {
-      setChatData(chatData);
+  function handleChatClick(sideBarData) {
+    if (sideBarData?.id) {
+      setChatData(sideBarData);
     }
   }
 

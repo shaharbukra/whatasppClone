@@ -1,14 +1,35 @@
 import { Avatar, IconButton } from "@material-ui/core";
-import { AttachFile, MoreHoriz, SearchOutlined } from "@material-ui/icons";
-import React from "react";
+import {
+  InsertEmoticon,
+  AttachFile,
+  MoreVert,
+  SearchOutlined,
+  Mic,
+} from "@material-ui/icons";
+import React, {useState} from "react";
 import "./Chat.css";
 import sampleData from "../Sidebar/sampleData/data.json";
 
 const Chat = ({ chatData }) => {
-  console.log(chatData);
+  const [input, setInput] = useState("");
+
   let messages;
   let groupData;
-  if (chatData) {
+  const sendMessage = (e) => {
+    e.preventDefault();
+    if (messages) {
+      messages.push((<p className='chat_message chat_reciever'>
+        <span className="chat__name">'Me'</span>
+        {input}
+        <span className="chat__timespan">
+          {new Date().toLocaleString("he-IL")}
+        </span>
+      </p>));
+    }
+  };
+  if (Object.keys(chatData).length === 0) {
+    return <div className="chat"></div>;
+  } else {
     const isGroup = sampleData.filter((g) => g.id === chatData.id);
     if (isGroup.length) {
       groupData = isGroup[0];
@@ -19,7 +40,7 @@ const Chat = ({ chatData }) => {
               ? "chat_message chat_reciever"
               : "chat_message";
 
-          classResult += message.typing ? ' chat__typing' : ''
+          classResult += message.typing ? " chat__typing" : "";
 
           return (
             <p key={index} className={classResult}>
@@ -33,34 +54,48 @@ const Chat = ({ chatData }) => {
         });
       }
     }
-  }
-
-  return (
-    <div className="chat">
-      <div className="chat__header">
-        <Avatar src={groupData?.picture ?? null} />
-        <div className="chat__headerInfo">
-          <h3>{groupData?.name ?? "Room name"}</h3>
-          <p>{groupData?.lastMessage ?? " Last seen on"} </p>
+    return (
+      <div className="chat">
+        <div className="chat__header">
+          <Avatar src={groupData?.picture ?? null} />
+          <div className="chat__headerInfo">
+            <h3>{groupData?.name ?? "Room name"}</h3>
+            {/* <p>{groupData?.lastMessage ?? " Last seen on"} </p> */}
+          </div>
+          <div className="chat__headerRight">
+            <IconButton>
+              <SearchOutlined />
+            </IconButton>
+            <IconButton>
+              <MoreVert />
+            </IconButton>
+          </div>
         </div>
-        <div className="chat__headerRight">
+        <div className="chat__body">{messages}</div>
+        <div className="chat__footer">
           <IconButton>
-            <SearchOutlined />
+            <InsertEmoticon />
           </IconButton>
           <IconButton>
             <AttachFile />
           </IconButton>
+          <form>
+            <input
+              onChange={(e) => setInput(e.target.value)}
+              placeholder="Type a message"
+              type="text"
+            />
+            <button onClick={sendMessage} type="submit">
+              Send a message
+            </button>
+          </form>
           <IconButton>
-            <MoreHoriz />
+            <Mic />
           </IconButton>
         </div>
       </div>
-      <div className="chat__body">
-        {messages}
-      </div>
-      <div className="chat__footer"></div>
-    </div>
-  );
+    );
+  }
 };
 
 export default Chat;
