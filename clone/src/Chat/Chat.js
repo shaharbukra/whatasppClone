@@ -6,25 +6,30 @@ import {
   SearchOutlined,
   Mic,
 } from "@material-ui/icons";
-import React, {useState} from "react";
+import React, { useState, useRef } from "react";
 import "./Chat.css";
 import sampleData from "../Sidebar/sampleData/data.json";
 
 const Chat = ({ chatData }) => {
   const [input, setInput] = useState("");
+  // const [messages, setMessages] = useState([]);
 
-  let messages;
+  const messagesEndRef = useRef(null);
+
+  let messages = [];
+
   let groupData;
   const sendMessage = (e) => {
     e.preventDefault();
     if (messages) {
-      messages.push((<p className='chat_message chat_reciever'>
-        <span className="chat__name">'Me'</span>
-        {input}
-        <span className="chat__timespan">
-          {new Date().toLocaleString("he-IL")}
-        </span>
-      </p>));
+      const newMessage = { message: input, date: "19-09-20 19:32", from: "Me" };
+      // setMessages((messages) => [...messages.value, newMessage]);
+      messages.push(newMessage);
+      setInput("");
+      setTimeout(() => {
+        messagesEndRef.current.scrollIntoView();
+      }, 10);
+
     }
   };
   if (Object.keys(chatData).length === 0) {
@@ -34,24 +39,7 @@ const Chat = ({ chatData }) => {
     if (isGroup.length) {
       groupData = isGroup[0];
       if (groupData.chat) {
-        messages = groupData.chat.map((message, index) => {
-          let classResult =
-            message.from === "Me"
-              ? "chat_message chat_reciever"
-              : "chat_message";
-
-          classResult += message.typing ? " chat__typing" : "";
-
-          return (
-            <p key={index} className={classResult}>
-              <span className="chat__name">{message.from}</span>
-              {message.message}
-              <span className="chat__timespan">
-                {new Date().toLocaleString("he-IL")}
-              </span>
-            </p>
-          );
-        });
+        messages = groupData.chat;
       }
     }
     return (
@@ -71,7 +59,27 @@ const Chat = ({ chatData }) => {
             </IconButton>
           </div>
         </div>
-        <div className="chat__body">{messages}</div>
+        <div className="chat__body">
+          {messages.map((message, index) => {
+            let classResult =
+              message.from === "Me"
+                ? "chat_message chat_reciever"
+                : "chat_message";
+
+            classResult += message.typing ? " chat__typing" : "";
+
+            return (
+              <p key={index} className={classResult}>
+                <span className="chat__name">{message.from}</span>
+                {message.message}
+                <span className="chat__timespan">
+                  {new Date().toLocaleString("he-IL")}
+                </span>
+              </p>
+            );
+          })}
+          <div ref={messagesEndRef} />
+        </div>
         <div className="chat__footer">
           <IconButton>
             <InsertEmoticon />
@@ -82,6 +90,7 @@ const Chat = ({ chatData }) => {
           <form>
             <input
               onChange={(e) => setInput(e.target.value)}
+              value={input}
               placeholder="Type a message"
               type="text"
             />
