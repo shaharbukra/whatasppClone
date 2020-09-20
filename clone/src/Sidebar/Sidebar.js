@@ -16,7 +16,7 @@ import Popper from "@material-ui/core/Popper";
 import MenuItem from "@material-ui/core/MenuItem";
 import MenuList from "@material-ui/core/MenuList";
 
-const Sidebar = () => {
+const Sidebar = ({onSideBarClicked}) => {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
   const handleToggle = () => {
@@ -29,6 +29,9 @@ const Sidebar = () => {
 
     setOpen(false);
   };
+  const getChatMessages = (event) =>{
+    onSideBarClicked(event);
+  }
   function handleListKeyDown(event) {
     if (event.key === "Tab") {
       event.preventDefault();
@@ -36,11 +39,11 @@ const Sidebar = () => {
     }
   }
   const groups =  sampleData.map((group,index) =>      {
-    return (<SidebarChat key={group.id}
+    return (<SidebarChat id={group.id} key={index}
         typing={group.typing}
         picture={group.picture}
         name={group.name}
-        lastMessage={group.lastMessage}
+        lastMessage={group.lastMessage} onSideBarClicked={getChatMessages}
       />)
     });
 

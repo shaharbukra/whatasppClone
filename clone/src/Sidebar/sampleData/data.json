@@ -13,26 +13,27 @@
         "typing": true,
         "chat": [
             {
-                "message": "בלה בלה בלה",
+                "message": "first message",
                 "date": "19-09-20 19:31",
                 "from": "Me"
             },
             {
-                "message": "בלה בלה 123123",
+                "message": "long message, long message, long message, long message...",
                 "date": "19-09-20 19:31",
                 "from": "someone"
             },
             {
-                "message": "בלה בלה 432423",
+                "message": "short message",
                 "date": "19-09-20 19:32",
                 "from": "someone"
             },
             {
-                "message": "בלה בלה גשדגשד",
+                "message": "hello world",
                 "date": "19-09-20 19:32",
                 "from": "Me"
             },
             {
+                "message": "Typing...",
                 "typing": true,
                 "date": "19-09-20 19:32",
                 "from": "Me"
@@ -48,7 +49,7 @@
     {
         "id": 4,
         "picture": "/Assets/4.jpg",
-        "name": "המשפחה שלנו 💛💚💙💜❤",
+        "name": "בוקרהמוביץ׳ 😛",
         "lastMessage": "בוקר טוב וחג שמח אלמוגי❤"
     },
     {
