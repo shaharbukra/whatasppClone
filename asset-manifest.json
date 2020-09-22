@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/whatasppClone/static/css/main.14924a01.chunk.css",
-    "main.js": "/whatasppClone/static/js/main.d09e3325.chunk.js",
-    "main.js.map": "/whatasppClone/static/js/main.d09e3325.chunk.js.map",
+    "main.js": "/whatasppClone/static/js/main.dc1a76dc.chunk.js",
+    "main.js.map": "/whatasppClone/static/js/main.dc1a76dc.chunk.js.map",
     "runtime-main.js": "/whatasppClone/static/js/runtime-main.8fe5d4e1.js",
     "runtime-main.js.map": "/whatasppClone/static/js/runtime-main.8fe5d4e1.js.map",
     "static/js/2.e8244b25.chunk.js": "/whatasppClone/static/js/2.e8244b25.chunk.js",
     "static/js/2.e8244b25.chunk.js.map": "/whatasppClone/static/js/2.e8244b25.chunk.js.map",
     "index.html": "/whatasppClone/index.html",
-    "precache-manifest.6c7dd932ba9d4354061a85ac1f33c48a.js": "/whatasppClone/precache-manifest.6c7dd932ba9d4354061a85ac1f33c48a.js",
+    "precache-manifest.a8846ebd8d564baef3509d65ac90d67f.js": "/whatasppClone/precache-manifest.a8846ebd8d564baef3509d65ac90d67f.js",
     "service-worker.js": "/whatasppClone/service-worker.js",
     "static/css/main.14924a01.chunk.css.map": "/whatasppClone/static/css/main.14924a01.chunk.css.map",
     "static/js/2.e8244b25.chunk.js.LICENSE.txt": "/whatasppClone/static/js/2.e8244b25.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8fe5d4e1.js",
     "static/js/2.e8244b25.chunk.js",
     "static/css/main.14924a01.chunk.css",
-    "static/js/main.d09e3325.chunk.js"
+    "static/js/main.dc1a76dc.chunk.js"
   ]
 }
