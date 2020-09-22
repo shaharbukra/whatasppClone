@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "194dc7423871d3c68047bc550b1439cc",
+    "revision": "0f322cdbb4fcc23b7af4da4ee0c2518d",
     "url": "/whatasppClone/index.html"
   },
   {
-    "revision": "a097812b20eb70857b8a",
+    "revision": "f7ba7c37967712409a53",
     "url": "/whatasppClone/static/css/main.14924a01.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/whatasppClone/static/js/2.e8244b25.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a097812b20eb70857b8a",
-    "url": "/whatasppClone/static/js/main.dbc385de.chunk.js"
+    "revision": "f7ba7c37967712409a53",
+    "url": "/whatasppClone/static/js/main.d09e3325.chunk.js"
   },
   {
     "revision": "0e9d89982bfdf4d2e868",
