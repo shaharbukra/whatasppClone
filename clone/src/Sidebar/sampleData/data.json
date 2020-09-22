@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "picture": "whatasppClone/Assets/1.png",
+        "picture": "Assets/1.png",
         "name": "אוכל",
         "lastMessage": "You were added"
     },
     {
         "id": 2,
-        "picture": "whatasppClone/Assets/2.jpg",
+        "picture": "Assets/2.jpg",
         "name": "עגלות",
         "lastMessage": "חחחחחח",
         "typing": true,
@@ -42,25 +42,25 @@
     },
     {
         "id": 3,
-        "picture": "whatasppClone/Assets/3.jpg",
+        "picture": "Assets/3.jpg",
         "name": "קפה ומאפה☕🍪",
         "lastMessage": "וואי, מעניין מה יהיה בכיפור 😅"
     },
     {
         "id": 4,
-        "picture": "whatasppClone/Assets/4.jpg",
+        "picture": "Assets/4.jpg",
         "name": "בוקרהמוביץ׳ 😛",
         "lastMessage": "בוקר טוב וחג שמח אלמוגי❤"
     },
     {
         "id": 5,
-        "picture": "whatasppClone/Assets/1.png",
+        "picture": "Assets/1.png",
         "name": "אוכל",
         "lastMessage": "You were added"
     },
     {
         "id": 6,
-        "picture": "whatasppClone/Assets/2.jpg",
+        "picture": "Assets/2.jpg",
         "name": "עגלות",
         "lastMessage": "חחחחחח",
         "typing": true
