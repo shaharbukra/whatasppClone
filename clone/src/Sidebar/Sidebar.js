@@ -58,7 +58,7 @@ const Sidebar = ({onSideBarClicked}) => {
   return (
     <div className="sidebar">
       <div className="sidebar__header">
-        <Avatar src="whatasppClone/Assets/me.png" />
+        <Avatar src="Assets/me.png" />
         <div className="sidebar__headerRight">
           <IconButton title="Status">
             <DonutLargeIcon />
