@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/whatasppClone/static/css/main.14924a01.chunk.css",
+    "main.js": "/whatasppClone/static/js/main.13017779.chunk.js",
+    "main.js.map": "/whatasppClone/static/js/main.13017779.chunk.js.map",
+    "runtime-main.js": "/whatasppClone/static/js/runtime-main.8fe5d4e1.js",
+    "runtime-main.js.map": "/whatasppClone/static/js/runtime-main.8fe5d4e1.js.map",
+    "static/js/2.e8244b25.chunk.js": "/whatasppClone/static/js/2.e8244b25.chunk.js",
+    "static/js/2.e8244b25.chunk.js.map": "/whatasppClone/static/js/2.e8244b25.chunk.js.map",
+    "index.html": "/whatasppClone/index.html",
+    "precache-manifest.430c941bbcc48cc110244bd5dfdb3e36.js": "/whatasppClone/precache-manifest.430c941bbcc48cc110244bd5dfdb3e36.js",
+    "service-worker.js": "/whatasppClone/service-worker.js",
+    "static/css/main.14924a01.chunk.css.map": "/whatasppClone/static/css/main.14924a01.chunk.css.map",
+    "static/js/2.e8244b25.chunk.js.LICENSE.txt": "/whatasppClone/static/js/2.e8244b25.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8fe5d4e1.js",
+    "static/js/2.e8244b25.chunk.js",
+    "static/css/main.14924a01.chunk.css",
+    "static/js/main.13017779.chunk.js"
+  ]
+}
